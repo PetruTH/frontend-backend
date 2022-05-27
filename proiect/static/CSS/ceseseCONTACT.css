@@ -1,0 +1,288 @@
+body{
+    background-color: #f5f6fa;
+  }
+
+  .navbar {
+    position: fixed;
+    display: flex;
+    background-color: #08090A;
+    font-family: Arial;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width:100%;
+  }
+  
+  
+
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(141, 153, 209);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(141, 153, 209);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+.maindiv{
+    filter: drop-shadow(10px 10px 10px rgb(0,0,0));
+    background-color: #7CC6FE;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 125px;
+    border-radius: 40px;
+    opacity: 92%;
+  }
+
+  
+.divDESPRENOI{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+option{
+    background-color: rgb(141, 153, 209);
+}
+
+@keyframes a2 {
+  0% {
+    transform: scale(0.8, 0.8);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(0.8, 0.8);
+  }
+
+}
+
+#divANIMATIE2 {
+  font-size: xx-large;
+  padding-top: 50px;
+  width: 100%;
+  text-align: center;
+  animation-name: a2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+
+.resp{
+  margin-bottom: 30px;
+}
+
+
+#center {
+  margin-top: 20px;
+  top: 72%;
+  left: 30px;
+  position: relative;
+  
+}
+.formular{
+	font: 95% Arial, Helvetica, sans-serif;
+	width: 50%;
+  margin-left: 25%;
+	padding: 16px;
+	background: #F7F7F7;
+  border-radius: 40px;
+  margin-bottom: 60px;
+}
+.formular h1{
+  border-radius:40px 40px 0px 0px;
+	background: #08090A;
+	padding: 20px 0;
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.formular input[type="text"],
+.formular input[type="date"],
+.formular input[type="datetime"],
+.formular input[type="email"],
+.formular input[type="number"],
+.formular input[type="search"],
+.formular input[type="time"],
+.formular input[type="url"],
+.formular textarea,
+.formular select 
+{
+	outline: none;
+	box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.formular input[type="text"]:focus,
+.formular input[type="date"]:focus,
+.formular input[type="datetime"]:focus,
+.formular input[type="email"]:focus,
+.formular input[type="number"]:focus,
+.formular input[type="search"]:focus,
+.formular input[type="time"]:focus,
+.formular input[type="url"]:focus,
+.formular textarea:focus,
+.formular select:focus
+{
+	box-shadow: 0 0 5px #000000;
+	padding: 3%;
+	border: 1px solid #000000;
+}
+
+.formular input[type="submit"],
+.formular input[type="button"]{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #08090A;
+	border: none;
+	color: #fff;
+}
+.formular input[type="submit"]:hover,
+.formular input[type="button"]:hover{
+	background: #000000;
+  color: white;
+}
+
+.locatie{
+  display: flex;
+  flex-direction: row;
+}
+
+.zoom {
+  width:30%;
+  transition: transform .2s; 
+  border-radius: 22%;
+  margin-left: 3%;
+  box-shadow: 9px 14px 31px -4px #000000;
+}
+.zoom:hover {
+  transform: scale(1.25);
+}
+
+.margine{
+  margin-bottom: 20px;
+}
+
+.submitbutton {
+  width:50%;
+  margin-left: 22%;
+  transition: transform .5s; 
+  margin: 0 auto;
+}
+
+
+@media screen and (max-width: 992px) {
+  .divANIMATIE2{
+    display: none;
+  }
+  h1{
+    font-size: 20px;
+  }
+  .formular h1{
+    font-size: 12px;
+  }
+  .formular label{
+    font-size: 12px;
+  }
+  .margine{
+    font-size: 12px;
+  }
+  .formular{
+    width: 80%;
+    margin-left: 9%;
+  }
+  .maindiv{
+    font-size: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .maindiv{
+    font-size: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .formular{
+    width: 80%;
+    margin-left: 9%;
+  }
+  .divANIMATIE2{
+    display: none;
+  }
+  h1{
+    font-size: 18px;
+  }
+  .formular h1{
+    font-size: 8px;
+  }
+  .formular label{
+    font-size: 10px;
+  }
+  .margine{
+    font-size: 10px;
+  }
+}

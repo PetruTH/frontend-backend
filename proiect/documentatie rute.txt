@@ -1,0 +1,32 @@
+Rute:
+
+/ => va incarca pagina principala (index.ejs)
+
+
+/views/contact.ejs => va incarca pagina de contact (contact.ejs)
+
+
+/views/oferteHIGHEND.ejs => va incarca pagina cu ofertele HIGHEND (oferteHIGHEND.ejs)
+
+
+/views/oferteHIGHEND.ejs => va incarca pagina cu ofertele HIGHEND (oferteHIGHEND.ejs)
+
+
+/views/oferteMEDIUM.ejs => va incarca pagina cu ofertele MEDIUM (oferteMEDIUM.ejs)
+
+
+/views/oferteLOWEND.ejs => va incarca pagina cu ofertele LOWEND (oferteLOWEND.ejs)
+
+/views/PACHETE_AVANTAJOASE.ejs => va incarca pagina ce contine pachetele avantajoase oferite de firma (PACHETE_AVANTAJOASE.ejs)
+
+
+/views => realizeaza operatia de create, selectand pachetul din pagina PACHETE_AVANTAJOASE.ejs 
+
+
+/views/PACHETE_AVANTAJOASE.ejs/update/:jsonBody => realizeaza operatia de update pentru serviciile premium
+
+
+/views/PACHETE_AVANTAJOASE.ejs/pachet_ales => realizeaza operatia de read, afisand pachetul ales, numarul de zile, tipul de serviciu, precum si data la care s-a ales pachetul
+
+
+/views/PACHETE_AVANTAJOASE.ejs/delete/:jsonBody => realizeaza operatia de delete, stergand elementele selectate anterior.

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+  <link rel="stylesheet" href="../static/CSS/cesese.css">
+  <title>INCHIRIERI</title>
+</head>
+<body id="body">
+  <div class="navbar">
+    <%- include('../views/navbar.ejs')%>;
+</div>
+
+  <div class = "maindiv" id="div_principal" onclick="clic()">
+    <h1>TW Inchirieri</h1>
+    <div class = "divDESPRENOI">
+      <div style = "margin-bottom: 20px;" id="dm1">&emsp;Avem o experienta de peste 15 ani in domeniul serviciilor de inchieri de automobile premium. Inca de la inceput, obiectivul nostru a fost sa satisfacem pretentiile clientilor nostri, avand ca repere calitatea, siguranta si confortul.
+
+        Strategia noastra pe termen lung este orientata spre oferirea unui serviciu inovativ, universal si de calitate ridicata in domeniul inchirieri auto, avand un excelent raport intre pret/performanta.
+      </div>
+      <div style = "margin-bottom: 20px;" id="dm2">
+        &emsp;Personalul nostru, bine pregatit si motivat, reuseste sa asigure o experienta placuta pentru dumneavoastra, rasplatind loialitatea.
+        Toate autoturismele au o perioada scurta de rulaj, reinnoind la fiecare 6 luni flota de automobile pentru a putea mentine continuu.
+      
+        Birourile noastre de inchirieri auto sunt disponibile in: Bucuresti, Otopeni si Timisoara, dar putem face livrari, la cerere, in toata Romania si in afara granitelor.
+      
+    </div>
+    <div style="text-align: center; font-size: larger;">Echipa TW Inchirieri</div>
+    <div class = "divECHIPA" id="dm3">
+        <div>
+          <div class = "imag"><img src="../static/IMAGINI/cineva.png" alt="cineva" style="width:100%;"></div>
+          <div>Cristiano Messi</div>
+          <div>Manager</div>
+        </div>
+        <div>
+          <div class = "imag"><img src="../static/IMAGINI/cineva.png" alt="cineva" style="width:100%;"></div>
+          <div>Lionel Ronaldo</div>
+          <div>Assistent Manager</div>
+        </div>
+        <div>
+          <div class = "imag"><img src="../static/IMAGINI/cineva.png" alt="cineva" style="width:100%;"></div>
+          <div>Tavi Popescu</div>
+          <div>Coordonator flota</div>
+        </div>
+    </div>
+  </div>
+  <input type="button" style="background-color:#000000; color: white; margin-top: 5px;" onclick="creaza_tabel()" value="Afiseaza statistica inchirierilor de-a lungul celor 5 ani de activitate." />
+    <div id="showData" class="TABEL"></div>
+
+  <div class="divCONDITII" id = "dm4">Termeni si conditii
+    <button type='button' style="width:100%; background-color:#000000; color: white; margin-top: 5px;" onclick="evidentiaza()">Evidentiaza punctele importante</button>
+    <div id = "margine">
+      <ul>
+        <li>clientul are obligatia de a conduce orice vehicul rent-a-car respectand prevederile legale</li>
+        <li id = "imp1">Varsta cuprinsa intre 24 si 68 de ani</li>
+        <li>este necesara o garantie de 200-500 Euro, depinzand de clasa masinii pe care doriti sa o inchiriati</li>
+        <li>livrarea si restituirea vehiculului inchiriat se efectueaza la locatia, data si ora mentionate de catre client</li>
+        <li id="imp2">Minim 3 ani de la obtinerea permisului</li>
+      </ul>
+    </div>
+    <div>
+      Tariful de inchiriere nu acopera urmatoarele:
+      <ol>
+        <li>Costuri de combustibilul (vehiculul este livrat cu minim un sfert de rezervor de motorina sau benzina)</li>
+        <li id = "imp3">amenzile de circulatie primite de client</li>
+        <li>Inlocuirea autoturismului defect, in cazul in care defectiunile sesizate au fost provocate de o folosire inadecvata a masinii; in caz de accidente care pot afecta conditiile de utilizare in siguranta pe carosabil, din pricina clientului, asa cum se arata in procesul verbal intocmit de Politie</li>
+      </ol> 
+  </div>
+  </div>
+  <div style="margin-bottom:35px; margin-left: 27%;">
+    <div style="margin-bottom: 35px; font-weight:600; font-family: 'Courier New', Courier, monospace;">Locatia sediului nostru principal, situat langa Aeroportul Otopeni</div>
+    <button type='button' style="width:60%; background-color:#000000; color: white; margin-bottom: 20px;" id="btn" onclick="adresa_exacta()">Prefer adresa exacta</button>    
+    <div><img src="../static/IMAGINI/locatie.jpg" id="poza" alt="locatie" class="zoom" onclick="clic2(event)"></div>
+  </div>
+  <div class="divCONDITII" id = "dm5">
+    <input type="text" id="myInput" onkeyup="filtru()" placeholder="cauta sponsori">
+    Multumiri sponsorilor:
+      <ul id="list"></ul>
+  </div>
+  <div style="margin-left: 500px;">
+    <button onclick="dark_mode()">dark mode</button>
+    <button onclick="light_mode()">light mode</button>
+  </div>
+  <div class="divANIMATIE1" id="de_ascuns">Multumim pentru atentie! </div>
+  </div>
+  <script src="../static/JAVASCRIPT/index.js"></script>
+</body>
+</html>

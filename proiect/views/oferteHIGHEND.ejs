@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/CSS/ceseseOFERTEH.css">
+    <title>oferteHIGHEND</title>
+    <script src="https://kit.fontawesome.com/a1108e4662.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar">
+      <%- include('../views/navbar.ejs')%>;
+  </div>
+</div>
+      <div class="grid1">
+          <div class="masina1">
+              <a href = "#" style = "margin-bottom: 20px; margin-top: 18px;"><img src="../static/IMAGINI/urus.jpg" alt="urus" class="zoom" onclick="salveaza_masina1()"></a>
+              <ul class = "fa-ul" id = "cv1">
+                <li>Lamborghini Urus</li>
+                <li>Capacitate cilindrica: 4998</li>
+                <li>Putere: 810cp</li>
+                <li>Culoare: Galben</li>
+                <li>An: 2019</li>
+              </ul>
+          </div>
+          <div class="masina2">
+            <a href = "#" style = "margin-bottom: 20px; margin-top: 18px;"><img src="../static/IMAGINI/a8.jpg" onclick="salveaza_masina2()" alt="a8" class="zoom"></a>
+            <ul class = "fa-ul" id = "cv2">
+              <li>Audi A8</li>
+              <li>Masina Electrica</li>
+              <li>Putere: 295cp</li>
+              <li>Culoare: negru</li>
+              <li>An: 2019</li>
+            </ul>
+          </div>
+           <div class="masina3">
+            <a href = "#" style = "margin-bottom: 20px; margin-top: 18px;"><img src="../static/IMAGINI/aventador.jpg" onclick="salveaza_masina3()" alt="aventador" class="zoom"></a>
+            <ul class = "fa-ul" id = "cv3">
+              <li>Lamborghini Aventador</li>
+              <li>Capacitate cilindrica: 5398</li>
+              <li>Putere: 800cp</li>
+              <li>Culoare: portocaliu</li>
+              <li>An: 2015</li>
+            </ul>
+          </div>
+          <div class="masina4">
+            <a href = "#" style = "margin-bottom: 20px; margin-top: 18px;"><img src="../static/IMAGINI/Sklasse.jpg" onclick="salveaza_masina4()" alt="sclass" class="zoom"></a>
+            <ul class = "fa-ul" id = "cv4">
+              <li>Mercedes S Klasse</li>
+              <li>Capacitate cilindrica: 2998</li>
+              <li>Putere: 321cp</li>
+              <li>Culoare: negru</li>
+              <li>An: 2021</li>
+            </ul>
+        </div>        
+      </div>
+      <div>
+        <button onclick="afiseaza_masini()">masini</button>
+      </div>
+      <p>Mai multe informatii la</p>
+      <script src="../static/JAVASCRIPT/oferte.js"></script>
+
+</body>
+</html>

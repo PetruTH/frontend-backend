@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/CSS/ceseseCONTACT.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="navbar">
+      <div class="navbar">
+        <%- include('../views/navbar.ejs')%>;
+    </div>
+  </div>
+    <div class = "maindiv" id="div_principal">
+      <h1 style="text-align: center;" id="head1"></h1>
+      <div class = "divDESPRENOI">
+        <div class="formular" style="margin-right: 30px;">
+          <h1>Formular pentru inchiriere</h1>
+          <form onkeyup="validate()">
+            <div>
+              <select id="select_cars" name="cars">
+                <option style="display:none;">Selectati categoria</option>
+              </select>
+            </div>
+            <p style="color:red; margin-top: 3px; margin-bottom:10px;" id="nerr">Introdu un nume valid</p>
+            <input type="text" name="field1" placeholder="Numele" id="nume" required/>
+            <p style="color:red; margin-top: 3px; margin-bottom:10px;" id="email_err">Introdu un email valid</p>
+            <input type="email" name="field2" placeholder="Email Address" id = "email" required/>
+            <input type="text" name="field1" placeholder="Data la care doriti sa inchriati" required id="data"/>
+            <input type="text" name="field1" placeholder="Varsta" id="varsta" required/>
+            <p style="color:red; margin-top: 3px; margin-bottom:10px;" id="tlf_err">Introdu un numar de telefon valid</p>
+            <input type="text" name="field1" placeholder="Numar de telefon" id="telefon" required/>
+            <div class="margine">
+                Dispuneti de un permis de conducere?<br>
+                <input type="radio" id="p1" name="permis" value="Da">
+                <label for="p1">Da</label><br>
+                <input type="radio" id="p2" name="permis" value="Nu">
+                <label for="p2">Nu</label><br>
+            </div>
+            <div>
+              <input type="checkbox">
+              <label> Am citit si sunt de acord cu Termenii si Conditiile.</label><br>
+              <input type="checkbox">
+              <label> Doresc sa fiu contact la numarul de telefon cu o zi inainte de data stabilita pentru vizionare.</label><br><br>
+              </div>
+            <button type='button' style="width:100%; background-color:#000000; color: white; margin-bottom: 5px;" onclick="afiseaza_programari()">afiseaza ultimele programari facute</button>
+            <input type="submit" value="Trimite" class="submitbutton" onclick="insert();validate()"/>
+            <button type='button' style="width:100%; background-color:#000000; color: white; margin-top: 5px;" onclick="sterge_programari()">sterge ultimele programari facute</button>
+
+          </form>
+            </div>
+        </div>
+      <div id="lista_de_programari">
+          <ul id="list"></ul>
+      </div>
+      <button style="width:100%; background-color:#000000; color: white; margin-top: 5px;" onclick="afiseaza_ultimele_3_masini_vizualizate()">Afiseaza Ultimele 3 masini vizualizate</button>
+      <div id="lista_de_masini">
+        <ul id="list_masini"></ul>
+        </div>
+          <button type='button' style="width:100%; background-color:#000000; color: white; margin-top: 5px;" onclick="remove_all()">sterge informatiile aditionale</button>
+      <div id="divANIMATIE2"></div>
+  </div>
+  <script src = "../static/JAVASCRIPT/contact.js"></script>
+</body>
+</html>
